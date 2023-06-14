@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../assets/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../assets/Inter-Regular.woff') format('truetype');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter-Regular';
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #210930;
+    color: black;
+}
+
+#boardLeft{
+    width: 50%;
+    height: 97vh;
+    background: linear-gradient(157.46deg, #F2B4B4 23.11%, rgba(225, 202, 255, 0.69) 55.55%, rgba(202, 239, 255, 0.47) 79.51%, rgba(251, 202, 255, 0.32) 100.93%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 10px 20px 40px;
+}
+
+
+#boardRight{
+    width: 50%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#boardContent{
+    max-width: 600px;
+    padding: 20px;
+}
+#boardRightTitle p{
+    padding: 0px;
+}
+
+#boardRightTitle p{
+    padding-bottom: 30px;
+    
+}
+
+#boardTextTitle{
+    font-size: 2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#headerLeft h4{
+    letter-spacing: 0.1em;
+}
+
+#headerLeft h2{
+    font-size: 2.3em;
+}
+
+
+.typeform{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+#sectionUnderline{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#buttonGoogleLogin{
+    margin-bottom: 20px;
+}
+
+.underlinetag{
+    width: 45%;
+    height: 2px;
+    background-color: white;
+}
+
+#boardLeftImg{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+    #boardLeft{
+        display:none;
+    }
+    
+    #boardRight{
+        width: 100%;
+        height: 97vh;
+    }
+}
+
+@media screen and (max-height: 649px) {
+
+    #sectionUnderline{
+        padding-bottom: 20px;
+    }
+
+    .typeform{
+        height: 55px;
+    }
+
+    form{
+        gap: 25px;
+    }
+}

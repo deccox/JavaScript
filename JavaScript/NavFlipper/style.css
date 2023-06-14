@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+  }
+  
+  #lista {
+    display: none;
+    transform: rotate(90deg) scale(1.08);
+  }
+  
+  div #fa-mark{
+    display: none;
+  }
+  
+  #check:checked ~ div #fa-mark {
+    display: inline;
+  }
+  
+  #check:checked ~ div #fa-bar {
+    display: none;
+  }
+  
+  #check:checked ~ div #lista {
+    display: block;
+    transform: rotate(45deg) scale(1.08);
+  }
+  
+ 
